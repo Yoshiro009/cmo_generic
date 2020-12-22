@@ -21,7 +21,7 @@ class AccountAssetProfile(models.Model):
         comodel_name='account.analytic.account',
         string='Analytic account',
         domain=[('type', '!=', 'view'),
-                ('state', 'not in', ('close', 'cancelled'))])
+                ('', 'not in', ('close', 'cancelled'))])
     account_asset_id = fields.Many2one(
         comodel_name='account.account',
         domain=[('type', '=', 'other')],
