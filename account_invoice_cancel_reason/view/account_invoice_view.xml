@@ -34,7 +34,6 @@
                 <xpath expr="//button[@name='invoice_cancel']" position="before">
                     <!-- <button name="%(action_account_invoice_cancel)d" type="action" states="draft,proforma2,open" string="Cancel Invoice" groups="account.group_account_invoice"/> -->
                     <button name="invoice_open" states="draft" string="Cancel Invoice"  class="oe_highlight"/>
-
                 </xpath>
                 <xpath expr="/form/sheet/div/h1" position="after">
                     <h2 attrs="{'invisible': [('state', '!=', 'cancel')]}">
